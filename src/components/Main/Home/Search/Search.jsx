@@ -1,12 +1,18 @@
-import React, { useState, useEffect } from "react";
+import React, { useContext, useState, useEffect } from "react";
 import { v4 as uuidv4 } from 'uuid';
 import axios from 'axios';
+import { FirstFetchContext } from '../../../../context/FirstFetchContext';
+import { PokemonContext } from '../../../../context/PokemonContext';
 
 const Search = ({ setMessage }) => {
   // ESTADOS
-
-  const [pokemons, setPokemons] = useState([]); // por defecto los primeros 20 pokemon
   const [value, setValue] = useState('');
+
+  // CONTEXTOS
+  const { firstfetch, updateFirstFetch } = useContext(FirstFetchContext);
+  const { pokemon, updatePokemon } = useContext(PokemonContext);
+  console.log(firstfetch)
+  console.log(pokemon)
 
   // FUNCIONES
 
@@ -27,6 +33,7 @@ const Search = ({ setMessage }) => {
 
         // LE PASAMOS pokemons AL PADRE Home
         setMessage(pokemonDetails);
+        updateFirstFetch(true);
       } catch (error) {
         // setPokemons([])
         setMessage([])
@@ -42,21 +49,22 @@ const Search = ({ setMessage }) => {
       try {
         const resp = await axios.get(`https://pokeapi.co/api/v2/pokemon/${value}`);
         const newPokemon = resp.data;
-        setPokemons(() => {
-          if (pokemons.length > 0) {
-            return [...pokemons, newPokemon];
+        // // LE PASAMOS pokemons AL PADRE Home
+        // setMessage(() => {
+        //   if (pokemons.length > 0) {
+        //     return [newPokemon, ...pokemons];
+        //   } else {
+        //     return [newPokemon];
+        //   }
+        // });
+
+        updatePokemon(() => {
+          if (pokemon.length > 0) {
+            return [newPokemon, ...pokemon];
           } else {
             return [newPokemon];
           }
-        });
-        // LE PASAMOS pokemons AL PADRE Home
-        setMessage(() => {
-          if (pokemons.length > 0) {
-            return [...pokemons, newPokemon];
-          } else {
-            return [newPokemon];
-          }
-        });
+        })
       } catch (error) {
         console.error('Fetch error in Search')
       }
@@ -78,12 +86,10 @@ const Search = ({ setMessage }) => {
 
 
   // RETURN
-  return <section className="formulario">
+  return <section className="search">
 
     <form onSubmit={handleSubmit} className="formSearch">
-      <div>
         <input type="text" name="name" placeholder="Nombre del Pokemon" />
-      </div>
       <button type="submit">Buscar</button>
     </form>
   </section>

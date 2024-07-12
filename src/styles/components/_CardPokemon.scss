@@ -1,1 +1,207 @@
 @import "../utils/variables.scss";
+@import '../utils/mixins.scss';
+
+.card-container {
+    display: inline-block;
+    border: 1px solid #dbdde6;
+    box-shadow: 0 0 6px rgba(72, 72, 72, 0.15);
+    border-radius: 24px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    width: 225px;
+    background-color: white;
+}
+
+.card-container img {
+    width: 140px;
+    height: 140px;
+}
+
+.titleCard {
+    display: inline-block;
+    font-size: large;
+    font-weight: 600;
+}
+
+a {
+    color: rgb(24, 24, 24);
+    text-decoration: none;
+}
+
+.numberCard {
+    position: absolute;
+    display: flex;
+    margin-left: 172px;
+    margin-top: -170px;
+    font-weight: 600;
+}
+
+.dataCard-container {
+    display: flex;
+    margin: 15px
+}
+
+// TYPES
+
+.typeCard-normal {
+    @include typeCard-template(#A8A878);
+}
+
+.typeCard-fighting {
+    @include typeCard-template(#C03028);
+}
+
+.typeCard-flying {
+    @include typeCard-template(#A890F0);
+}
+
+.typeCard-poison {
+    @include typeCard-template(#A040A0);
+}
+
+.typeCard-ground {
+    @include typeCard-template(#E0C068);
+}
+
+.typeCard-rock {
+    @include typeCard-template(#B8A038);
+}
+
+.typeCard-bug {
+    @include typeCard-template(#A8B820);
+}
+
+.typeCard-ghost {
+    @include typeCard-template(#705898);
+}
+
+.typeCard-steel {
+    @include typeCard-template(#B8B8D0);
+}
+
+.typeCard-fire {
+    @include typeCard-template(#F08030);
+}
+
+.typeCard-water {
+    @include typeCard-template(#6890F0);
+}
+
+.typeCard-grass {
+    @include typeCard-template(#78C850);
+}
+
+.typeCard-electric {
+    @include typeCard-template(#F8D030);
+}
+
+.typeCard-psychic {
+    @include typeCard-template(#F85888);
+}
+
+.typeCard-ice {
+    @include typeCard-template(#98D8D8);
+}
+
+.typeCard-dragon {
+    @include typeCard-template(#7038F8);
+}
+
+.typeCard-dark {
+    @include typeCard-template(#705848);
+}
+
+.typeCard-fairy {
+    @include typeCard-template(#EE99AC);
+}
+
+.typeCard-unknown {
+    @include typeCard-template(#68A090);
+}
+
+.typeCard-shadow {
+    @include typeCard-template(#705898);
+}
+
+
+// IMG CONTAINER TYPES
+
+.imgContainer-normal {
+    @include imgContainer(#A8A878);
+}
+
+.imgContainer-fighting {
+    @include imgContainer(#C03028);
+}
+
+.imgContainer-flying {
+    @include imgContainer(#A890F0);
+}
+
+.imgContainer-poison {
+    @include imgContainer(#A040A0);
+}
+
+.imgContainer-ground {
+    @include imgContainer(#E0C068);
+}
+
+.imgContainer-rock {
+    @include imgContainer(#B8A038);
+}
+
+.imgContainer-bug {
+    @include imgContainer(#A8B820);
+}
+
+.imgContainer-ghost {
+    @include imgContainer(#705898);
+}
+
+.imgContainer-steel {
+    @include imgContainer(#B8B8D0);
+}
+
+.imgContainer-fire {
+    @include imgContainer(#F08030);
+}
+
+.imgContainer-water {
+    @include imgContainer(#6890F0);
+}
+
+.imgContainer-grass {
+    @include imgContainer(#78C850);
+}
+
+.imgContainer-electric {
+    @include imgContainer(#F8D030);
+}
+
+.imgContainer-psychic {
+    @include imgContainer(#F85888);
+}
+
+.imgContainer-ice {
+    @include imgContainer(#98D8D8);
+}
+
+.imgContainer-dragon {
+    @include imgContainer(#7038F8);
+}
+
+.imgContainer-dark {
+    @include imgContainer(#705848);
+}
+
+.imgContainer-fairy {
+    @include imgContainer(#EE99AC);
+}
+
+.imgContainer-unknown {
+    @include imgContainer(#68A090);
+}
+
+.imgContainer-shadow {
+    @include imgContainer(#705898);
+}

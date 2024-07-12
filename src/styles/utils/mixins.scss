@@ -1,0 +1,43 @@
+@mixin typeCard-template($color) {
+    display: inline-flex;
+    color: white;
+    border-radius: 100px;
+    padding: 2px 20px;
+    height: 20px;
+    margin-left: auto;
+    background-color: $color;
+}
+
+@function lighten-color($color, $amount) {
+    @return mix(white, $color, $amount);
+}
+
+@mixin imgContainer($color) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 180px;
+    background-color: white;
+    margin: 4px;
+    border-top-left-radius: 21px;
+    border-top-right-radius: 21px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    background-color: lighten-color($color, 70%);
+
+}
+
+@mixin detailsImgContainer($color) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 180px;
+    background-color: white;
+    margin: 4px;
+    border-top-left-radius: 21px;
+    border-top-right-radius: 21px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    background-color: lighten-color($color, 70%);
+
+}

@@ -1,0 +1,20 @@
+@import "../utils/variables.scss";
+
+.btnReset {
+    padding: 5px 19px;
+    max-height: 35px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(255, 49, 49);
+    color: rgb(255, 255, 255);
+    font-size: medium;
+    cursor: pointer;
+    margin-top: -50px;
+    margin-left: auto;
+    margin-bottom: 20px;
+
+}
+
+.divBtnReset {
+    display: flex;
+}

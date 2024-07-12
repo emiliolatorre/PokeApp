@@ -4,32 +4,39 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Main from './components/Main';
 // Importamos el contexto
-// import { ThemeContext } from './context/ThemeContext'
+import { PokemonContext } from './context/PokemonContext'
+import { FirstFetchContext } from './context/FirstFetchContext'
 
 
 function App() {
 
-  // PENDING para meter CONTEXT
-  // const [theme, setTheme] = useState("night"); // "day" or "night"
+  const [pokemon, setPokemon] = useState('');
+  const [firstfetch, setFirstFetch] = useState(false);
 
-  // // Cambiamos el tema
-  // const toggleTheme = () => setTheme(theme === "day"? "night" : "day");
 
-  // const themeData = {
-  //   theme,
-  //   toggleTheme
-  // }
+  const updatePokemon = (newPokemon) => {
+    setPokemon(newPokemon);
+  };
+
+  const pokemonData = { pokemon, updatePokemon }
+
+  const updateFirstFetch = (newFetch) => {
+    setFirstFetch(newFetch);
+  };
+
+  const fetchData = { firstfetch, updateFirstFetch }
 
   return (
     <>
-    {/* PENDING incluir en ThemeContext value={XXX} */}
-    {/* <ThemeContext.Provider > */}
+    <PokemonContext.Provider value={pokemonData}>
+    <FirstFetchContext.Provider value={fetchData}>
       <BrowserRouter >
         <Header />
         <Main />
       </BrowserRouter>
       <Footer />
-      {/* </ThemeContext.Provider> */}
+      </FirstFetchContext.Provider>
+      </PokemonContext.Provider>
     </>
   )
 }
