@@ -1,20 +1,30 @@
 @import "../utils/variables.scss";
 
 .btnReset {
-    padding: 5px 19px;
-    max-height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 44px;
+    width: 44px;
     border: none;
     border-radius: 10px;
-    background-color: rgb(255, 49, 49);
-    color: rgb(255, 255, 255);
-    font-size: medium;
+    background-color: rgb(226, 59, 59);
+    font-size: large;
     cursor: pointer;
-    margin-top: -50px;
+    margin-top: -30px;
     margin-left: auto;
-    margin-bottom: 20px;
+    margin-bottom: 14px;
 
+}
+
+.btnReset:hover {
+    background-color: rgb(205, 55, 55);
 }
 
 .divBtnReset {
     display: flex;
+}
+
+.iconReset {
+    width: 32px;
 }

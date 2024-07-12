@@ -24,7 +24,7 @@ const Home = () => {
 
   return <section className="home">
     <div className="divBtnReset">
-    <button onClick={resetPokemons} className="btnReset">Reset</button>
+    <button onClick={resetPokemons} className="btnReset"><img className="iconReset" src="/icons8-cita-recurrente-64.png" alt="reset" /></button>
     </div>
     <Search setMessage={setMessage}/>
     {!pokemon?<ListaPokemon message={message}/> : <ListaPokemon/>}

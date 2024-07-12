@@ -40,7 +40,7 @@ const Details = () => {
   return <section className="sectionDetails">
   <article className="details-container">
     <div className={imgClass}>
-      {image ? <img src={image} alt="image Pokemon" /> : <img src="../../../src/assets/pokemon-undefined.png" alt="image Pokemon" />}
+      {image ? <img src={image} alt="image Pokemon" /> : <img src="/pokemon-undefined.png" alt="image Pokemon" />}
     </div>
     {number < 10 ? <p className="details-numberCard">#00{number}</p> : <p className="details-numberCard">#{number}</p>}
     {/* <p>{number}</p> */}

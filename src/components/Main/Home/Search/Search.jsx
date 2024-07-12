@@ -89,8 +89,8 @@ const Search = ({ setMessage }) => {
   return <section className="search">
 
     <form onSubmit={handleSubmit} className="formSearch">
-        <input type="text" name="name" placeholder="Nombre del Pokemon" />
-      <button type="submit">Buscar</button>
+        <input type="text" name="name" placeholder="Search your Pokemon..." />
+      <button type="submit"><img className="searchIcon" src="/icons8-búsqueda-64.png" alt="search"/></button>
     </form>
   </section>
 };

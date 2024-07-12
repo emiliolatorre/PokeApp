@@ -26,7 +26,6 @@ const Formulario = () => {
       }
       ],
       name: data.name,
-      moves: data.moves,
       moves: [{
         move:{name: data.move1}
       },

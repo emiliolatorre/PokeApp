@@ -5,15 +5,15 @@ import { ProgressBar } from 'react-loader-spinner';
 import { PokemonContext } from '../../../../context/PokemonContext';
 
 
-const ListaPokemon = ({ message }) => {
+const ListaPokemon = ({ message = [] }) => {
   console.log(message)
 
-  const { pokemon, updatePokemon } = useContext(PokemonContext);
+  const { pokemon = [] } = useContext(PokemonContext);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     // Aquí puedes actualizar el estado de carga cuando se reciben los datos
-    if (message || pokemon) {
+    if (message.length !== 0 || pokemon.length !== 0) {
       setLoading(false);
     }
   }, [message, pokemon]);
@@ -36,7 +36,7 @@ const renderCards = () => {
     );
   } else {
     return pokemon.map((item, i) =>
-      <CardPokemon key={uuidv4()} dataItem={item} />
+      <CardPokemon key={uuidv4()} dataItem={item}/>
     );
   }
     }
