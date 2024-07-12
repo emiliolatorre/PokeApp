@@ -9,6 +9,14 @@ const ListaPokemon = ({ message }) => {
   console.log(message)
 
   const { pokemon, updatePokemon } = useContext(PokemonContext);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    // Aquí puedes actualizar el estado de carga cuando se reciben los datos
+    if (message || pokemon) {
+      setLoading(false);
+    }
+  }, [message, pokemon]);
 
   //FUNCIONES
 //   const renderCards = () => {
@@ -35,7 +43,7 @@ const renderCards = () => {
 
   return <section className="listaPokemon">
     {/* {renderCards()} */}
-    {message || pokemon ? renderCards() : <ProgressBar
+    {!loading ? renderCards() : <ProgressBar
   visible={true}
   height="80"
   width="80"

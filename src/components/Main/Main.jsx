@@ -6,7 +6,7 @@ import Details from './Details'
 
 const Main = () => {
   return <main className="main">
-    <h1><img className="pokeball" src="../../../../src/assets/poke_ball_icon_155925.png" alt="pokeball" /> Pokédex</h1>
+    <h1><img className="pokeball" src="/public/poke_ball_icon_155925.png" alt="pokeball" /> Pokédex</h1>
 
     <Routes>
       <Route path='/' element={<Home />} />

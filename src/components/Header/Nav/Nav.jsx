@@ -1,7 +1,7 @@
 import { useContext } from 'react'
 import { Link } from "react-router-dom";
 
-import burgerIcon from "../../../assets/burger-icon.png";
+import burgerIcon from "/public/burger-icon.png";
 
 const Nav = () => {
 
