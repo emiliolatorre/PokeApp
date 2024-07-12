@@ -12,7 +12,7 @@ const CardPokemon = ({dataItem}) => {
 
   return <article className="card-container">
     <div className={imgClass}>
-      {image? <img src={image} alt="image Pokemon" /> : <img src="/public/pokemon-undefined.png" alt="image Pokemon" />}
+      {image? <img src={image} alt="image Pokemon" /> : <img src="/pokemon-undefined.png" alt="image Pokemon" />}
     </div>
     {number<10?<p className="numberCard">#00{number}</p> : <p className="numberCard">#{number}</p>}
   {/* <p>{number}</p> */}
