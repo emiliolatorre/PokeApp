@@ -37,7 +37,8 @@ const Details = () => {
   const speedBar = stats[5].base_stat * 100 / 255
 
 
-  return <article className="details-container">
+  return <section className="sectionDetails">
+  <article className="details-container">
     <div className={imgClass}>
       {image ? <img src={image} alt="image Pokemon" /> : <img src="../../../src/assets/pokemon-undefined.png" alt="image Pokemon" />}
     </div>
@@ -110,6 +111,7 @@ const Details = () => {
 
 
   </article >
+  </section>
 };
 
 export default Details;
