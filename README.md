@@ -18,37 +18,37 @@ PokeApp es una aplicación diseñada para buscar tus pokemon favoritos y poder c
 - ⚙️ **Librerias:** React-Hook-Form, Material UI, React-Loader-Spinner.
 
 ## Funcionalidades Principales
-  - Renderiza en Home por defecto de los 20 primeros pokemon.
-  - Búsqueda y filtrado de pokemons.
-  - Vista general en Home y Vista detalles al seleccionar el nombre del Pokemon
-  - Creador de tus propios Pokemon en Create your Pokemon, se guardan en Home durante la sesión.
-  - Boton Reset en Home para vaciar Context y volver a renderizar los 20 primeros pokemon.
+  - **Renderiza en Home** por defecto de los 20 primeros pokemon.
+  - **Buscador** de pokemons, que se van guardando en Home durante la sesión.
+  - **Vista general** en Home y **Vista detalle** al seleccionar el nombre del Pokemon
+  - **Creador** de tus propios Pokemon en Create your Pokemon, se guardan en Home durante la sesión.
+  - **Boton Reset** en Home para vaciar Context y volver a renderizar los 20 primeros pokemon.
 
 ## Estructura de Carpetas
-- node_modules/: Contiene las dependencias del proyecto instaladas con npm.
-- public/: Carpeta para archivos estáticos públicos.
-- src/: Carpeta principal del código fuente del proyecto.
-    - components/: Carpeta que contiene los componentes reutilizables de la aplicación.
-        - Footer/: Componente de pie de página.
-        - Header/: Componente de encabezado.
-        - Main/: Componente principal de la aplicación.
-            - Details/: Subcomponente que maneja la vista detalle.
-            - Formulario/: Subcomponente que maneja el formulario para dar de alta pokemons.
-            - Home/: Subcomponente que maneja la home.
-                - ListaPokemon/: Subcomponente de Home que maneja la vista general pokemons.
-                    - CardPokemon/: Subcomponente que maneja las cards pokemon de Home.
-                - Search/: Subcomponente de Home que maneja el buscador.
-    - context/: carpeta que contiene los Context inciados.
-    - styles/: carpeta que continene los stilos SASS por componente.
-- App.jsx: Componente principal de la aplicación.
-- main.jsx: Archivo principal para iniciar la aplicación.
-- .eslintrc.cjs: Archivo de configuración para ESLint.
-- .gitignore: Archivo para especificar qué archivos y carpetas deben ser ignorados por Git.
-- index.html: Archivo HTML principal.
-- package-lock.json: Archivo que mantiene un registro de las versiones exactas de las dependencias instaladas.
-- package.json: Archivo de configuración del proyecto que contiene scripts y dependencias.
-- README.md: Archivo de documentación del proyecto.
-- vite.config.js: Archivo de configuración para Vite.
+- **node_modules/:** Contiene las dependencias del proyecto instaladas con npm.
+- **public/:** Carpeta para archivos estáticos públicos.
+- **src/:** Carpeta principal del código fuente del proyecto.
+    - **components/:** Carpeta que contiene los componentes reutilizables de la aplicación.
+        - **Footer/:** Componente de pie de página.
+        - **Header/:** Componente de encabezado.
+        - **Main/:** Componente principal de la aplicación.
+            - **Details/:** Subcomponente que maneja la vista detalle.
+            - **Formulario/:** Subcomponente que maneja el formulario para dar de alta pokemons.
+            - **Home/:** Subcomponente que maneja la home.
+                - **ListaPokemon/:** Subcomponente de Home que maneja la vista general pokemons.
+                    - **CardPokemon/:** Subcomponente que maneja las cards pokemon de Home.
+                - **Search/:** Subcomponente de Home que maneja el buscador.
+    - **context/:** carpeta que contiene los Context inciados.
+    - **styles/:** carpeta que continene los stilos SASS por componente.
+- **App.jsx:** Componente principal de la aplicación.
+- **main.jsx:** Archivo principal para iniciar la aplicación.
+- **.eslintrc.cjs:** Archivo de configuración para ESLint.
+- **.gitignore:** Archivo para especificar qué archivos y carpetas deben ser ignorados por Git.
+- **index.html:** Archivo HTML principal.
+- **package-lock.json:** Archivo que mantiene un registro de las versiones exactas de las dependencias instaladas.
+- **package.json:** Archivo de configuración del proyecto que contiene scripts y dependencias.
+- **README.md:** Archivo de documentación del proyecto.
+- **vite.config.js:** Archivo de configuración para Vite.
 
 ## Autor
 - Emilio Latorre Guerra
