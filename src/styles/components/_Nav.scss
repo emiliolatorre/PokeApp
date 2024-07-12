@@ -48,6 +48,8 @@
 
 @media only screen and (min-width:$ipad-breakpoint){
     .nav{
+        margin: 0;
+
         &>label{
             display:none;
         }
@@ -61,11 +63,11 @@
     }
 
     .ulNav {
-        margin-top: -10px;
+        margin-top: -18px;
     }
 
     .pokedex {
         width: 85px;
-        margin: 0 0 -33px 15px;
+        margin: 0 0 -28px 15px;
     }
 }
