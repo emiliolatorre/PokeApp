@@ -2,6 +2,7 @@
 
 .nav{
     width:100%;
+    margin: 6px 0;
 
 
     &>input{
@@ -9,7 +10,7 @@
     }
 
     &>input:checked~ul{
-        display: block;
+        display: flex;
     }
 
     &>ul{
@@ -19,17 +20,17 @@
         text-align: center;
         list-style-type: none;
         display: none;
-        background-color: grey;
+        background-color: #eaedf6;
 
         &>li{
             padding:16px;
 
         
             &:hover{
-                background-color: darkslategray;
+                background-color: #d7d9e4;
 
                 & a{
-                    color:white;
+                    color: black;
                     display:block;
                     height:100%;
                     width:100%;
@@ -37,6 +38,11 @@
             }
         }
     }
+}
+
+.pokedex {
+    width: 85px;
+    margin: 5px 220px -2px 15px;
 }
 
 
@@ -49,8 +55,17 @@
         &>ul{
             position:static;
             display:flex;
-            justify-content: space-around;
+            justify-content: right;
             
         }
+    }
+
+    .ulNav {
+        margin-top: -10px;
+    }
+
+    .pokedex {
+        width: 85px;
+        margin: 0 0 -33px 15px;
     }
 }

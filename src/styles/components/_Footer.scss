@@ -1,1 +1,33 @@
 @import "../utils/variables.scss";
+
+.footer {
+    display: flex;
+    min-height: 5vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #eaedf6;
+    margin-top: auto;
+    bottom: 0;
+    justify-content: center;
+}
+
+.pokedexFooter {
+    width: 120px;
+        margin: 20px;
+}
+
+@media (min-width: 560px) {
+    .footer {
+        display: flex;
+        position: absolute;
+        min-height: 5vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        background-color: #eaedf6;
+        margin-top: auto;
+        bottom: 0;
+        justify-content: center;
+    }
+  }

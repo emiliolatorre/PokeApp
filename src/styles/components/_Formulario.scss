@@ -1,1 +1,95 @@
 @import "../utils/variables.scss";
+
+.articleForm {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.formCreate {
+    margin-top: 32px;
+    width: 460px;
+}
+
+.h2Form {
+    display: block;
+    margin-bottom: 10px;
+}
+
+
+.formCreate input {
+    width: 100%;
+    height: 44px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    padding-left: 10px;
+    border: 1px solid #9a9ba1;
+    box-sizing: border-box;
+}
+
+.formCreate select {
+    width: 100%;
+    height: 44px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid #9a9ba1;
+    box-sizing: border-box;
+}
+
+.formCreate input[type="submit"] {
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: medium;
+    font-weight: 500;
+    margin-top: 5px;
+    width: 100%;
+    height: 45px;
+}
+
+
+@media (min-width: 560px) {
+    .formCreate {
+        margin-top: 22px;
+    }
+    
+    .formCreate input {
+        width: 100%;
+        height: 44px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        padding-left: 10px;
+        border: 1px solid #9a9ba1;
+        box-sizing: border-box;
+    }
+    
+    .formCreate select {
+        width: 100%;
+        height: 44px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border: 1px solid #9a9ba1;
+        box-sizing: border-box;
+    }
+    
+    .formCreate input[type="submit"] {
+        background-color: blue;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: medium;
+        font-weight: 500;
+        margin-top: 5px;
+        width: 100%;
+        height: 45px;
+    }
+  }

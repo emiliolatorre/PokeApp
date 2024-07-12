@@ -10,9 +10,10 @@ const Nav = () => {
 
   return (
     <nav className="nav">
+      <img className='pokedex' src="/Pokédex_logo.png" alt="pokedex" />
       <input type="checkbox" id="menu" />
       <label htmlFor="menu"><img src={`${burgerIcon}`} alt="burger" width="25px" /></label>
-      <ul>
+      <ul className='ulNav'>
         <li>
           <Link to="/">Home</Link>
         </li>
