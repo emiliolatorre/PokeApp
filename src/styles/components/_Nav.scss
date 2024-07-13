@@ -21,9 +21,11 @@
         list-style-type: none;
         display: none;
         background-color: #eaedf6;
+        flex-direction: column;
 
         &>li{
             padding:16px;
+            display: block;
 
         
             &:hover{
@@ -58,7 +60,7 @@
             position:static;
             display:flex;
             justify-content: right;
-            
+            flex-direction: row;
         }
     }
 
